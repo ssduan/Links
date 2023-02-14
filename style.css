@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Repro';
+    src: url(fonts/ABCRepro-Thin-Trial.otf);
+}
+
+:root {
+    --base: 21px;
+    --heading: calc(var(--base) *1.5);
+    --type-color: #585442;
+    font-size: var(--base);
+}
+
+body {
+    background-color: #F9F9F9;
+}
+
+h1 {
+    font-family: 'Repro', sans-serif;
+    color:#BABABA;
+    font-size: var(--base);
+    line-height: 220px;
+
+}
+
+@media (min-width: 600px) {
+    .title {
+        --base: 280px;
+    }
+}
