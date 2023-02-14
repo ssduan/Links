@@ -62,12 +62,12 @@ h1 {
     font-family: 'Repro', sans-serif;
     color:#DEDEDE;
     font-size: var(--base);
-    line-height: 220px;
 
 }
 
-@media (min-width: 600px) {
-    .title {
-        --base: 280px;
+
+h1 {
+        font-size: 30vw;
+        line-height: 80%;
     }
-}
+
