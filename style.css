@@ -3,12 +3,7 @@
     src: url(fonts/ABCRepro-Thin-Trial.otf);
 }
 
-:root {
-    --base: 21px;
-    --heading: calc(var(--base) *1.5);
-    --type-color: #DEDEDE;
-    font-size: var(--base);
-}
+
 
 body {
     background-color: #F9F9F9;
@@ -71,3 +66,5 @@ h1 {
         line-height: 80%;
     }
 
+
+    
