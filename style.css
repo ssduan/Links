@@ -6,7 +6,7 @@
 :root {
     --base: 21px;
     --heading: calc(var(--base) *1.5);
-    --type-color: #585442;
+    --type-color: #DEDEDE;
     font-size: var(--base);
 }
 
@@ -19,7 +19,7 @@ body {
   }
   
  .title,
-  #grass {
+  #grass, #pixels, #green_painting, #red_fabric, #materials {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -32,11 +32,35 @@ body {
     left: 38%;
     top: 88px;
   }
+  #pixels {
+    z-index: 10;
+    width: 100px;
+    left: 16%;
+    top: 250px;
+  }
+  #green_painting {
+    z-index: 10;
+    width: 100px;
+    left: 24%;
+    top: 440px;
+  }
+#red_fabric {
+    z-index: 10;
+    width:150px;
+    left: 60%;
+    top: 300px;
+}
+#materials {
+    z-index: 10;
+    width:100px;
+    left: 80%;
+    top: 40px;
+}
 
 
 h1 {
     font-family: 'Repro', sans-serif;
-    color:#BABABA;
+    color:#DEDEDE;
     font-size: var(--base);
     line-height: 220px;
 
