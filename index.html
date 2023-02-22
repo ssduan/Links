@@ -13,32 +13,29 @@
 
     
     <body>
-
-        <div id="container">
-
+        <header>
             <div class="title">
-                <h1>
-                    Color&<br>Texture
-                </h1>
-                <div id="grass">
-                    <img src="images/green grass.jpg" alt="green grass">
-                </div>
-                <div id="pixels">
-                    <img src="images/digtal pixels animation.gif" alt="digtal pixels animation">
-                </div>
-                <div id="green_painting">
-                    <img src="images/green painting.png" alt="green painting">
-                </div>
-                <div id="red_fabric">
-                    <img src="images/red fabric.gif" alt="red fabric">
-                </div>
-                <div id="materials">
-                    <img src="images/materials.jpg" alt="various materials and textures">
-                </div>
+            <h1>Color&<br>Texture</h1>
             </div>
+            <a href="https://api.are.na/v2/channels/color-texture-pbzhk-i_wsa" id="channel-url"></a>
+        </header>
+            <main>
+                <!-- <section class="channel-description"></section> -->
+                <section class="image-blocks"></section>
+            </main>
+
+            <template id="image-block">
+                <div class="container">
+                  <img class="image-square">
+                </div>
+            </template>
+
+            
 
         </div>
 
-        
+
+
+
     </body>
 </html>
