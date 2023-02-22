@@ -18,16 +18,19 @@ h1 {
     font-family: 'Repro', sans-serif;
     color:#DEDEDE;
     font-size: var(--base);
-    font-size: 3vw;
+    font-size: 6vw;
     line-height: 80%;
+    display: flex;
+    align-items: center;
 
 }
 
 
 .title{
-  padding-top: 30px;
   position:  fixed;
-  text-align: center;
+
+  justify-content: center;
+
 }
 
 ul {
