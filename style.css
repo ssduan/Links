@@ -3,7 +3,11 @@
     src: url(fonts/ABCRepro-Thin-Trial.otf);
 }
 
+:root { --spacing: 16px; }
 
+@media (min-width: 768px) {
+	:root { --spacing: 32px; }
+}
 
 body {
     background-color: #F9F9F9;
@@ -19,18 +23,57 @@ h1 {
 
 }
 
-.image-blocks {
-  position:relative;
-  display:grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin: 20px;
-}
 
 .title{
-  text-align: center;
   padding-top: 30px;
+  position:  fixed;
+  text-align: center;
 }
 
-.image-square {
-padding: 30px;
+ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(calc(6 * var(--spacing)), 1fr));
+
+}
+
+li { aspect-ratio: 1; }
+
+figure {
+	overflow: hidden;
+	word-break: break-word;
+}
+
+figure,
+img {
+	height: 100%;
+	width: 100%;
+  padding: 10px;
+
+
+}
+
+figure > img { object-fit: cover; }
+
+.image-block aside {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0, 0.75);
+	z-index: 2;
+	padding: calc(var(--spacing) * 2);
+}
+
+.image-block aside > img {
+	object-fit: contain;
+}
+
+.image-block.active aside {
+	display: block;
+}
+
+.image-block aside > p {
+	color: white;
 }

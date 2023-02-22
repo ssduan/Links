@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="reset.css" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
-        <script defer src="arena.js"></script>
-
+        <script defer src="./assets/arena.js"></script>
+        <script defer src="./assets/main.js"></script>
     </head>
 
 
@@ -20,15 +20,21 @@
             <a href="https://api.are.na/v2/channels/color-texture-pbzhk-i_wsa" id="channel-url"></a>
         </header>
             <main>
-                <!-- <section class="channel-description"></section> -->
-                <section class="image-blocks"></section>
+                <ul class="image-blocks"></ul>
             </main>
 
-            <template id="image-block">
-                <div class="container">
-                  <img class="image-square">
-                </div>
-            </template>
+		<!-- Images. -->
+		<template id="image-block">
+			<li class="image-block">
+				<figure>
+					<img class="image-square">
+				</figure>
+				<aside>
+					<img class="image">
+					<p class="title"></p>
+				</aside>
+			</li>
+		</template>
 
             
 
