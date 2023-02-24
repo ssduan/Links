@@ -52,8 +52,8 @@ figure, img {
 }
 
 main {
-	margin-left: 5%;
-	margin-right: 5%;
+padding: 5%;
+
 }
 
 figure > img { object-fit: cover; }
@@ -83,3 +83,18 @@ figure > img { object-fit: cover; }
 }
 
 
+.full-name{
+	font-family: 'Repro', sans-serif;
+    color:#DEDEDE;
+	line-height: 90%;
+	font-size: 2vw;
+}
+
+.channel-owner, .channel-collaborator {
+
+padding-left: 5%;
+padding-top: 2%;
+
+position: fixed;
+
+}
