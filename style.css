@@ -32,8 +32,8 @@ h1 {
 	position: fixed;
 
 	top: 50%;
+	left: -10%;
 
-	left: -135px;
 
 	transform: rotate(-90deg);
 
