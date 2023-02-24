@@ -17,10 +17,14 @@
               <div class="title">
                   <h1>Color & Texture</h1>
               </div>
-            <a href="https://api.are.na/v2/channels/color-texture-pbzhk-i_wsa" id="channel-url"></a>
+            <a href="https://api.are.na/v2/channels/color-texture-pbzhk-i_wsa" id="channel-url">See on Are.na</a>
+			<ul class="channel-owner channel-collaborator"></ul> <!-- Owner and collaborators. -->
+
+
         </header>
             <main>
                 <ul class="image-blocks"></ul>
+
             </main>
 
 		<!-- Images. -->
@@ -34,6 +38,22 @@
 					<p class="title"></p>
 				</aside>
 			</li>
+		</template>
+        
+        <!-- Template for the channel owner. -->
+		<template id="channel-owner">
+
+				<a class="link"> <!-- Link to their profile inserts here. -->
+					<p class="full-name"></p> <!-- Username inserts here. -->
+				</a>
+
+		</template>
+
+		<!-- And collaborator. -->
+		<template id="channel-collaborator">
+				<a class="link">
+					<p class="full-name"></p>
+				</a>
 		</template>
 
             
