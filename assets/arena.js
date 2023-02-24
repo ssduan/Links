@@ -81,7 +81,7 @@ const parseBlocks = (data) => {
 		}
 	})
 
-	data.contents.slice().reverse().forEach((block) => {
+	data.contents.slice().forEach((block) => {
 		switch (block.class) {
 			case 'Attachment':
 				let attachment = block.attachment.content_type
@@ -220,6 +220,7 @@ const channel = document.getElementById('channel-url').href.split('/').filter(Bo
 fetch(`https://api.are.na/v2/channels/${channel}?per=100`, {cache: 'no-store'})
 	.then(response => response.json())
 	.then(data => {
+		console.log(data)
 		setBasics(data)
 		parseBlocks(data)
 		window.arenaCallback?.()
