@@ -52,7 +52,7 @@ figure, img {
 }
 
 main {
-padding: 5%;
+padding: 4%;
 
 }
 
@@ -93,7 +93,7 @@ figure > img { object-fit: cover; }
 .channel-owner, .channel-collaborator {
 
 padding-left: 5%;
-padding-top: 2%;
+padding-top: 1%;
 
 position: fixed;
 
