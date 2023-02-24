@@ -18,20 +18,29 @@ h1 {
     font-family: 'Repro', sans-serif;
     color:#DEDEDE;
     font-size: var(--base);
-    font-size: 6vw;
+    font-size: 4vw;
     line-height: 80%;
-    display: flex;
-    align-items: center;
+
+	transform-origin: top left;
+
 
 }
 
 
-.title{
-  position:  fixed;
 
-  justify-content: center;
+.title {
+	position: fixed;
 
-}
+	top: 50%;
+
+	left: -135px;
+
+	transform: rotate(-90deg);
+
+  }
+
+
+
 
 ul {
 	display: grid;
