@@ -3,7 +3,7 @@ window.arenaCallback = () => {
 	// This will run after Are.na’s API returns your data.
 	
 	// Get all of my image blocks; querySelectorAll takes a CSS selector
-	let imageBlocks = document.querySelectorAll('li.image-block')
+	let imageBlocks = document.querySelectorAll('div.image-block')
 
 	// Go through all of my image blocks
 	imageBlocks.forEach((block) => {

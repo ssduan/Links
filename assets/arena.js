@@ -4,6 +4,15 @@ markdownIt.src = 'https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.3.2/mark
 document.head.appendChild(markdownIt)
 
 
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+}
+
 
 const setBasics = (data) => {
 	document.title = data.title
@@ -81,7 +90,9 @@ const parseBlocks = (data) => {
 		}
 	})
 
-	data.contents.slice().forEach((block) => {
+	const contents = data.contents.slice()
+	shuffleArray(contents)
+	contents.forEach((block) => {
 		switch (block.class) {
 			case 'Attachment':
 				let attachment = block.attachment.content_type
@@ -225,3 +236,6 @@ fetch(`https://api.are.na/v2/channels/${channel}?per=100`, {cache: 'no-store'})
 		parseBlocks(data)
 		window.arenaCallback?.()
 	})
+
+
+	
