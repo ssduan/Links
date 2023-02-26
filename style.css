@@ -38,9 +38,10 @@ h1 {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(calc(4 * var(--spacing)), 1fr));
 
-}
+	}
 
-li { aspect-ratio: 1; }
+
+
 
 figure {
 	overflow: hidden;
@@ -50,6 +51,7 @@ figure {
 figure, img {
   padding: 8%;
 }
+
 
 main {
 padding: 4%;
@@ -67,8 +69,6 @@ figure > img { object-fit: cover; }
 	right: 0;
 	background-color: rgba(0,0,0, 0.75);
 	z-index: 2;
-	/* padding: calc(var(--spacing) * 2); */
-
 }
 
 .image-block aside > img {
@@ -102,3 +102,15 @@ position: fixed;
 
 }
 
+
+
+figure img {
+	transition: transform 1s ease-in-out;
+	transition-duration: 1s;
+	will-change: transform;
+  }
+  
+figure img:hover {
+	transform: scale(1.5);
+  }
+  
