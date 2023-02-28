@@ -25,14 +25,20 @@ h1 {
 
 
 
-.title {
+
+
+  .header {
+	padding: 20px; 
 	position: fixed;
-	top: 50%;
-	left: -10%;
-	transform: rotate(-90deg);
+	width: 100%;
+	background-color: #F9F9F9;
+	z-index: 1;
 
-  }
+	box-shadow: 0px 30px 20px 0px #F9F9F9 ;
 
+
+}
+	
 
 .image-blocks {
 	display: grid;
@@ -55,7 +61,7 @@ figure, img {
 
 main {
 padding: 4%;
-
+padding-top:80px;
 }
 
 figure > img { object-fit: cover; }
@@ -67,7 +73,7 @@ figure > img { object-fit: cover; }
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: rgba(0,0,0, 0.75);
+	background-color: rgba(0,0,0, 0.1);
 	z-index: 2;
 }
 
@@ -95,10 +101,7 @@ figure > img { object-fit: cover; }
 
 .channel-owner, .channel-collaborator {
 
-padding-left: 5%;
-padding-top: 1%;
 
-position: fixed;
 
 }
 
