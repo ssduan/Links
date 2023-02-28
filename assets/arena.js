@@ -238,4 +238,12 @@ fetch(`https://api.are.na/v2/channels/${channel}?per=100`, {cache: 'no-store'})
 	})
 
 
-	
+	// Get the element you want to track
+const element = document.querySelector('.image');
+
+// Add event listener to the element
+element.addEventListener('mouseover', function(event) {
+  // Get the ID of the element that triggered the event
+  const id = event.target.id;
+  console.log('Element ID: ' + id);
+});

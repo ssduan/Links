@@ -3,7 +3,7 @@
     src: url(fonts/ABCRepro-Thin-Trial.otf);
 }
 
-:root { --spacing: 16px; }
+:root { --spacing: 12px; }
 
 @media (min-width: 768px) {
 	:root { --spacing: 32px; }
@@ -16,11 +16,10 @@ body {
 
 h1 {
     font-family: 'Repro', sans-serif;
-    color:#DEDEDE;
-    font-size: var(--base);
-    font-size: 4vw;
+    color:#888888;
+    font-size: 13px;
+
     line-height: 80%;
-	transform-origin: top left;
 }
 
 
@@ -28,14 +27,16 @@ h1 {
 
 
   .header {
-	padding: 20px; 
+	padding: 4%;
+	padding-top: 15px;
 	position: fixed;
 	width: 100%;
 	background-color: #F9F9F9;
 	z-index: 1;
 
 	box-shadow: 0px 30px 20px 0px #F9F9F9 ;
-
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 
 }
 	
@@ -43,7 +44,6 @@ h1 {
 .image-blocks {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(calc(4 * var(--spacing)), 1fr));
-
 	}
 
 
@@ -60,8 +60,8 @@ figure, img {
 
 
 main {
-padding: 4%;
-padding-top:80px;
+	padding: 4%;
+	padding-top: 80px;
 }
 
 figure > img { object-fit: cover; }
@@ -92,12 +92,27 @@ figure > img { object-fit: cover; }
 	color: white;
 }
 
-.full-name{
+.full-name {
 	font-family: 'Repro', sans-serif;
-    color:#DEDEDE;
-	line-height: 90%;
-	font-size: 2vw;
+    color:#888888;
+	line-height: 1.2;
+	font-size: 13px;
 }
+
+.random {
+	font-family: 'Repro', sans-serif;
+    color:#888888;
+	line-height: 1.2;
+	font-size: 13px;
+}
+
+.contributors {
+	font-size: 12px;
+	color:#888888;
+padding-bottom: 5px;
+	
+}
+
 
 .channel-owner, .channel-collaborator {
 
@@ -108,7 +123,8 @@ figure > img { object-fit: cover; }
 
 
 figure img {
-	transition: transform 1s ease-in-out;
+	transition: transform 2s ease-in-out;
+	/* transition: opacity 10s ease-in-out ; */
 	transition-duration: 1s;
 	will-change: transform;
   }
