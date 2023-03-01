@@ -11,18 +11,6 @@
 	:root { --spacing: 32px; }
 }
 
-@media (max-width: 768px) {
-	main {
-		padding-top: 500px;
-	} 
-	h1 {
-		font-size: 21px;
-
-	}
-
-}
-
-
 body {
     background-color: #F6F6F6
 }
@@ -32,7 +20,7 @@ h1 {
     font-family: 'Repro', sans-serif;
 	font-weight:lighter;
     color:#dd5c2d32;
-    font-size: 35px;
+    font-size: 32px;
     line-height: 95%;
 	letter-spacing: 0.8px;
 }
@@ -55,8 +43,6 @@ h1 {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(calc(4 * var(--spacing)), 1fr));
 	}
-
-
 
 
 figure {
@@ -88,7 +74,6 @@ figure > img { object-fit: cover; }
 
 .image-block aside > img {
 	object-fit: contain;
-
 }
 
 .image-block.active aside {
@@ -110,6 +95,9 @@ figure > img { object-fit: cover; }
 	letter-spacing: 0.8px;
 }
 
+.header div {
+	padding-right: 10px;
+}
 
 .contributors {
 	font-family: 'Repro', sans-serif;
@@ -118,7 +106,6 @@ figure > img { object-fit: cover; }
 	padding-bottom: 5px;
 	letter-spacing: 0.8px;
 }
-
 
 
 figure img {
@@ -148,3 +135,17 @@ h1:hover {
 	transition: all 5s ease-in-out;
 
 }
+
+aside {
+		animation: fadeInAnimation ease-out 3s;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
+		}
+		@keyframes fadeInAnimation {
+		0% {
+		opacity: 0;
+		}
+		100% {
+		opacity: 1;
+		}
+		}
