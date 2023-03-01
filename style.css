@@ -3,11 +3,25 @@
     src: url(ABCRepro-Thin-Trial.otf);
 }
 
-:root { --spacing: 12px; }
+:root {
+	 --spacing: 21px;
+	 }
 
 @media (min-width: 768px) {
 	:root { --spacing: 32px; }
 }
+
+@media (max-width: 768px) {
+	main {
+		padding-top: 500px;
+	} 
+	h1 {
+		font-size: 21px;
+
+	}
+
+}
+
 
 body {
     background-color: #F9F9F9;
@@ -16,11 +30,11 @@ body {
 
 h1 {
     font-family: 'Repro', sans-serif;
-	font-weight: 200;
-    color:#bababa;
+	font-weight: 100;
+    color:#BCBCBC;
     font-size: 35px;
     line-height: 90%;
-	letter-spacing: -1px;
+	letter-spacing: -0.5px;
 }
 
 
@@ -62,7 +76,7 @@ figure, img {
 
 main {
 	/* padding: 4%; */
-	padding-top: 110px;
+	padding-top: 95px;
 }
 
 figure > img { object-fit: cover; }
