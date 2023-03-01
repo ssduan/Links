@@ -24,35 +24,30 @@
 
 
 body {
-    background-color: #F9F9F9;
+    background-color: #F6F6F6
 }
 
 
 h1 {
     font-family: 'Repro', sans-serif;
-	font-weight: 100;
-    color:#BCBCBC;
+	font-weight:lighter;
+    color:#dd5c2d32;
     font-size: 35px;
-    line-height: 90%;
-	letter-spacing: -0.5px;
+    line-height: 95%;
+	letter-spacing: 0.8px;
 }
 
 
-
-
-
   .header {
-padding: 15px;
-padding-bottom: 25px;
+	padding: 15px;
+	padding-bottom: 25px;
 	position: fixed;
 	width: 100%;
-	background-color: #F9F9F9;
+	background-color: #F6F6F6;
 	z-index: 1;
-
-	box-shadow: 0px 30px 20px 0px #F9F9F9 ;
+	box-shadow: 0px 30px 50px 10px #F6F6F6 ;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-
 }
 	
 
@@ -75,8 +70,7 @@ figure, img {
 
 
 main {
-	/* padding: 4%; */
-	padding-top: 100px;
+	padding-top: 98px;
 }
 
 figure > img { object-fit: cover; }
@@ -113,6 +107,7 @@ figure > img { object-fit: cover; }
     color:#888888;
 	line-height: 1.2;
 	font-size: 13px;
+	letter-spacing: 0.8px;
 }
 
 
@@ -121,14 +116,7 @@ figure > img { object-fit: cover; }
 	font-size: 11px;
 	color:#BCBCBC;
 	padding-bottom: 5px;
-	
-}
-
-
-.channel-owner, .channel-collaborator {
-
-
-
+	letter-spacing: 0.8px;
 }
 
 
@@ -146,13 +134,17 @@ figure img:hover {
   
 a:hover {
 	color: #DB5228;
-
+	transition: all 1s ease-in-out;
 
 }
 
 .full-name:hover {
 	color: #DB5228;
-
-
-
+	transition: all 1s ease-in-out;
 }	
+
+h1:hover {
+	color: #2D54DD;
+	transition: all 5s ease-in-out;
+
+}
