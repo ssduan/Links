@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Repro';
-    src: url(fonts/ABCRepro-Thin-Trial.otf);
+    src: url(ABCRepro-Thin-Trial.otf);
 }
 
 :root { --spacing: 12px; }
@@ -16,10 +16,11 @@ body {
 
 h1 {
     font-family: 'Repro', sans-serif;
-    color:#888888;
-    font-size: 13px;
-
-    line-height: 80%;
+	font-weight: 200;
+    color:#bababa;
+    font-size: 35px;
+    line-height: 90%;
+	letter-spacing: -1px;
 }
 
 
@@ -27,8 +28,8 @@ h1 {
 
 
   .header {
-	padding: 4%;
-	padding-top: 15px;
+padding: 15px;
+padding-bottom: 25px;
 	position: fixed;
 	width: 100%;
 	background-color: #F9F9F9;
@@ -60,8 +61,8 @@ figure, img {
 
 
 main {
-	padding: 4%;
-	padding-top: 80px;
+	/* padding: 4%; */
+	padding-top: 110px;
 }
 
 figure > img { object-fit: cover; }
@@ -92,24 +93,20 @@ figure > img { object-fit: cover; }
 	color: white;
 }
 
-.full-name {
+.full-name, .random {
 	font-family: 'Repro', sans-serif;
+	font-weight: 300;
     color:#888888;
 	line-height: 1.2;
 	font-size: 13px;
 }
 
-.random {
-	font-family: 'Repro', sans-serif;
-    color:#888888;
-	line-height: 1.2;
-	font-size: 13px;
-}
 
 .contributors {
-	font-size: 12px;
-	color:#888888;
-padding-bottom: 5px;
+	font-family: 'Repro', sans-serif;
+	font-size: 11px;
+	color:#BCBCBC;
+	padding-bottom: 5px;
 	
 }
 
@@ -133,3 +130,15 @@ figure img:hover {
 	transform: scale(1.5);
   }
   
+a:hover {
+	color: #DB5228;
+
+
+}
+
+.full-name:hover {
+	color: #DB5228;
+
+
+
+}	

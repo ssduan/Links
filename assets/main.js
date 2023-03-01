@@ -24,7 +24,3 @@ window.arenaCallback = () => {
 }
 
 
-function refreshSection() {
-	document.getElementById("mySection").innerHTML = document.getElementById("mySection").innerHTML;
-  }
-  
