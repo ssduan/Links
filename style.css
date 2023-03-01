@@ -76,7 +76,7 @@ figure, img {
 
 main {
 	/* padding: 4%; */
-	padding-top: 95px;
+	padding-top: 100px;
 }
 
 figure > img { object-fit: cover; }
